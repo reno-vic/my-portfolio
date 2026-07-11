@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { isOversizedRequest, rateLimit } from "@/lib/rate-limit";
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const ownerEmail = process.env.CONTACT_TO_EMAIL || "vicreno08@gmail.com";
@@ -20,15 +21,46 @@ function escapeHtml(value: string) {
 
 export async function POST(request: Request) {
   try {
+    if (isOversizedRequest(request, 8_192)) {
+      return NextResponse.json({ error: "Message is too large." }, { status: 413 });
+    }
+
+    const limit = rateLimit(request, {
+      keyPrefix: "contact",
+      max: 3,
+      windowMs: 15 * 60 * 1000,
+    });
+
+    if (limit.limited) {
+      return NextResponse.json(
+        { error: "Too many messages for now. Please try again in a little while." },
+        {
+          status: 429,
+          headers: {
+            "Retry-After": String(limit.retryAfter),
+          },
+        }
+      );
+    }
+
     const body = await request.json();
     const name = clean(body.name, 120);
     const email = clean(body.email, 180).toLowerCase();
     const message = clean(body.message || body.details, 3000);
+    const website = clean(body.website, 200);
+
+    if (website) {
+      return NextResponse.json({ ok: true });
+    }
 
     if (!name || !email || !message) {
       return NextResponse.json({ error: "Please fill in your name, email, and message." }, { status: 400 });
     }
 
+    if (message.length < 10) {
+      return NextResponse.json({ error: "Please leave a slightly longer message (At least 10 characters)" }, { status: 400 });
+    }
+ 
     if (!emailPattern.test(email)) {
       return NextResponse.json({ error: "Please use a valid email address." }, { status: 400 });
     }

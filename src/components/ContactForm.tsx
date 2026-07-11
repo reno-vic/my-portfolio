@@ -27,6 +27,7 @@ export default function ContactForm() {
           name: formData.get("name"),
           email: formData.get("email"),
           message: formData.get("message"),
+          website: formData.get("website"),
         }),
       });
 
@@ -47,6 +48,11 @@ export default function ContactForm() {
 
   return (
     <form className="glossy-panel p-6 md:p-8 rounded-2xl bg-surface-container-lowest" onSubmit={handleSubmit}>
+      <div className="hidden" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input id="website" name="website" tabIndex={-1} autoComplete="off" type="text" />
+      </div>
+
       <Field label="Name">
         <input name="name" className="form-input" id="name" placeholder="YOUR NAME" type="text" required />
       </Field>
