@@ -16,7 +16,7 @@ export default function Journey() {
               The path behind the software I build.
             </h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-              A quick walk through my education, work experience, certifications, recognition, and the engineering
+              A quick walk through my education, work experience, certifications, recognition and the engineering
               areas I keep pursuing.
             </p>
           </div>

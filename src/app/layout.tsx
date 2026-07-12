@@ -22,11 +22,11 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Victor Reno | Software & Cloud Engineer",
   description:
-    "Victor Reno Ogara builds reliable business systems, cloud-native applications, payment workflows, ecommerce platforms, and operational tools for growing teams.",
+    "Victor Reno Ogara builds reliable business systems, cloud-native applications, payment workflows, ecommerce platforms and operational tools.",
   openGraph: {
     title: "Victor Reno Ogara | Software & Cloud Engineer | Business Technology Strategist",
     description:
-      "Business technology strategy, software engineering, cloud systems, payments, ecommerce, and workflow automation.",
+      "Business technology strategy, software engineering, cloud systems, payments, ecommerce and workflow automation.",
     type: "website",
     locale: "en_US"
   },

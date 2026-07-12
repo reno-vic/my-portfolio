@@ -39,7 +39,7 @@ export default function Services() {
                        </div>
                        <h2 className="font-headline-md text-headline-md text-on-surface mb-4 group-hover:text-primary transition-colors">Custom Web Applications</h2>
                        <p className="font-body-md text-body-md text-on-surface-variant max-w-xl">
-                           Scalable, secure, and high-performance applications built from the ground up. I leverage modern frameworks to create seamless, interactive experiences that users love and businesses rely on.
+                           Scalable, secure and high-performance applications built from the ground up. I leverage modern frameworks to create seamless, interactive experiences that users love and businesses rely on.
                        </p>
                    </div>
                    <div className="flex flex-wrap gap-2 mt-auto">

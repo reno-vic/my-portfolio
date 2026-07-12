@@ -19,7 +19,7 @@ export default function Footer() {
               Victor Reno
             </Link>
             <p className="font-body-md text-body-md text-on-surface-variant max-w-md">
-              Software &amp; Cloud Engineer building reliable business systems, cloud-native applications, payment workflows, ecommerce platforms, and operational tools for small, medium and large enterprises.
+              Software &amp; Cloud Engineer building reliable business systems, cloud-native applications and operational tools for small, medium and large enterprises.
             </p>
             <div className="flex flex-wrap gap-3 mt-6">
               <a href={`mailto:${contact.email}`} className="contact-row w-auto min-h-0 py-3">

@@ -39,7 +39,7 @@ export const projects: Project[] = [
     title: "Orionramp",
     eyebrow: "Fiat-to-Crypto On-Ramp API",
     description:
-      "An on-ramp API that helps wallets, businesses, and institutions move users from local money, like KES via M-Pesa, into supported digital assets on Hedera such as stablecoins.",
+      "An on-ramp API that helps wallets, businesses and institutions move users from local money, like KES via M-Pesa, into supported digital assets on Hedera such as stablecoins.",
     value:
       "The point is access; as stablecoins and digital wallets become more useful, moving from fiat currencies to digital assets should feel simple and less intimidating. It was built at the NSE Innovation Lab by a team of five engineers, me included.",
     tech: ["Hedera", "Paystack", "Merchant Dashboard", "Fintech"],
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     description:
       "A Switzerland-based ecommerce platform for whole-house water filtration products.",
     value:
-      "The project needed commerce flows that could explain technical filtration benefits, support product confidence, and make buying feel credible.",
+      "The project needed commerce flows that could explain technical filtration benefits, support product confidence and make buying feel credible.",
     tech: ["Ecommerce", "International", "Operations"],
     link: "https://mam-nature.com/",
     status: "Live",
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     title: "Pureez",
     eyebrow: "Kenyan marketplace",
     description:
-      "A Kenyan marketplace for approved household items, land, vehicles, and other listings.",
+      "A Kenyan marketplace for approved household items, land, vehicles and other listings.",
     value:
       "It moved a growing WhatsApp community into a safer web and mobile marketplace with approved listings and better discovery.",
     tech: ["Marketplace", "SEO", "Mobile App", "Trust Flows"],
@@ -148,49 +148,155 @@ export const projects: Project[] = [
 
 export const services = [
   {
-    title: "Custom Web Applications",
+    title: "Web Apps & SaaS Products",
     icon: "web",
     description:
-      "Dashboards, portals, admin tools, and product experiences built around your actual business process, not a generic template.",
-    tags: ["React / Next.js", "Node.js", "Cloud Ready"]
+      "Customer portals, dashboards, booking tools, subscription products, admin panels and full web platforms built around the way your business actually works.",
+    tags: ["Next.js", "React", "SaaS", "Dashboards"]
   },
   {
-    title: "Fintech & Integrations",
+    title: "Payments & PaaS",
     icon: "payments",
     description:
-      "Payment gateways, reconciliation screens, webhooks, and reporting flows that make money movement easier to trace.",
-    tags: ["M-Pesa", "Stripe", "Paystack"]
+      "Payment APIs, checkout flows, wallet integrations, provider webhooks, transaction dashboards and payment-as-a-service ideas for teams moving money.",
+    tags: ["M-Pesa", "Paystack", "Stripe", "Webhooks"]
   },
   {
-    title: "Business Process Automation",
+    title: "Business Systems & ERPs",
     icon: "account_tree",
     description:
-      "Internal tools, approval flows, queues, and ERP-style workflows that help teams move faster with fewer manual mistakes.",
-    tags: ["Workflows", "Internal Tools", "Queues"]
+      "Internal tools, approval flows, inventory screens, reporting tools, staff workflows, ERP-style modules and systems that reduce manual work.",
+    tags: ["ERP", "Workflows", "Reports", "Automation"]
+  },
+  {
+    title: "CRMs & Operations Tools",
+    icon: "groups",
+    description:
+      "Tools for tracking customers, leads, tasks, follow-ups, support requests, and everyday operations that should not live forever in spreadsheets.",
+    tags: ["CRM", "Support", "Tracking", "Teams"]
+  },
+  {
+    title: "Ecommerce & Marketplaces",
+    icon: "shopping_cart",
+    description:
+      "Online stores, product catalogs, vendor marketplaces, listing platforms, checkout flows, and search-friendly pages that help people buy with confidence.",
+    tags: ["Catalogs", "Checkout", "SEO", "Listings"]
+  },
+  {
+    title: "AI Bots & Workflows",
+    icon: "smart_toy",
+    description:
+      "Chatbots, AI assistants, internal automations, n8n-style workflows, data helpers, and Python-powered integrations that reduce repetitive work.",
+    tags: ["Python", "n8n", "Ollama", "Automation"]
+  },
+  {
+    title: "Portfolios & Business Websites",
+    icon: "badge",
+    description:
+      "Professional websites for founders, consultants, teams, products, and personal brands where trust, clarity, and presentation matter.",
+    tags: ["Portfolio", "Brand", "Landing Pages", "SEO"]
+  },
+  {
+    title: "Bug Fixing & Reengineering",
+    icon: "build_circle",
+    description:
+      "Fixing broken features, cleaning up confusing code, improving slow pages, modernizing old flows, and making existing software easier to maintain.",
+    tags: ["Debugging", "Refactor", "Performance", "Maintenance"]
+  },
+  {
+    title: "Technical Consultation",
+    icon: "support_agent",
+    description:
+      "If you are not sure what to build first, I can help clarify the scope, pick a practical architecture, plan the MVP, or review the technical direction.",
+    tags: ["Planning", "Architecture", "MVP", "Review"]
   }
 ];
 
 export const valueCards = [
   {
-    title: "Move Faster",
+    title: "Clear communication",
     icon: "bolt",
     description:
-      "Automating manual processes saves time, reduces back-and-forth, and helps your team focus on work that actually grows the business.",
-    metric: "Time to Market down"
+      "I keep the work understandable. You should know what is being built, why it matters, what is blocked, and what the next step is.",
+    metric: "Less guesswork"
   },
   {
-    title: "Sleep Soundly",
+    title: "Quality that lasts",
     icon: "shield",
     description:
-      "Payments, records, and internal workflows need validation, retries, logs, and clear ownership so small issues do not become 3 AM emergencies.",
-    metric: "System Downtime down"
+      "I care about the boring parts too: validation, readable code, clean data flow, error handling, and systems that are easier to maintain.",
+    metric: "Better handover"
   },
   {
-    title: "Grow Easily",
+    title: "Business-minded delivery",
     icon: "trending_up",
     description:
-      "I build with maintainable architecture so today's simple app can become tomorrow's stronger business platform.",
-    metric: "User Capacity up"
+      "I do not just ask what screen you want. I ask what problem the business is solving, who uses it, and what would make the work easier.",
+    metric: "Useful outcomes"
+  },
+  {
+    title: "Trusted across teams",
+    icon: "verified",
+    description:
+      "I have worked around startups, ecommerce businesses, public-sector systems, fintech ideas, and enterprise-style internal tools.",
+    metric: "Small to large"
+  },
+  {
+    title: "Practical approach",
+    icon: "route",
+    description:
+      "I can start with a messy idea, clarify the workflow, build the first usable version, then improve it without overcomplicating the product.",
+    metric: "From idea to app"
+  },
+  {
+    title: "Reliable support",
+    icon: "handshake",
+    description:
+      "After delivery, I can help fix issues, improve flows, add features, and keep the product moving as your needs become clearer.",
+    metric: "Ongoing help"
+  }
+];
+
+export const clientTypes = [
+  "Founders",
+  "SMEs",
+  "Startups",
+  "Ecommerce brands",
+  "Fintech teams",
+  "Enterprise teams",
+  "Public-sector workflows",
+  "Consultants",
+  "Personal brands",
+  "Remote teams"
+];
+
+export const references = [
+  {
+    name: "Roman Njoroge",
+    role: "Co-Founder & Software Engineer",
+    company: "Orionramp",
+    country: "Kenya",
+    initials: "RN",
+    note:
+      "Worked together on Orionramp at the NSE Innovation Lab, collaborating on fintech product work with a five-engineer team."
+  },
+  {
+    name: "Christof Braun",
+    role: "Founder",
+    company: "Mam Nature",
+    country: "Switzerland",
+    initials: "CB",
+    note:
+      "Reference for ecommerce work around Mam Nature, where clear product presentation and trust mattered before checkout."
+  },
+  {
+    name: "Purity Langat",
+    role: "Founder / CEO",
+    company: "Pureez",
+    country: "Kenya",
+    initials: "PL",
+    note:
+      "Reference for marketplace work around Pureez, moving a growing commerce community toward a stronger web and mobile product."
   }
 ];
 
@@ -307,41 +413,92 @@ export const techChoices = [
   {
     title: "Python",
     copy:
-      "I use Python when backend logic needs to stay readable, quick to test, and friendly for automation-heavy work."
+      "I use Python for backend logic, automation, and data-heavy workflows because it lets me move fast without making the code unreadable. It has been useful in coursework, scripts, APIs, and product logic where clarity matters."
   },
   {
     title: "TypeScript",
     copy:
-      "I use TypeScript for web apps because it catches mistakes early and makes bigger products easier to change safely."
+      "I use TypeScript for Next.js, React, and Node work because it catches many mistakes before they reach users. It is especially useful when a project grows from a few screens into a real product with shared data and moving parts."
   },
   {
     title: "PostgreSQL",
     copy:
-      "I use PostgreSQL when the data matters. Payments, orders, users, and reports need something predictable."
+      "I use PostgreSQL when records need structure and trust: users, payments, orders, reports, and audit trails. It gives me a solid base for systems where the answer cannot be 'we lost track of it.'"
   },
   {
     title: "AWS & Cloud Tools",
     copy:
-      "I use cloud platforms when a product needs to be reachable, secure, backed up, and ready to grow past one laptop."
+      "I am using AWS Lambda and serverless functions for cloud-native app work, especially where deployment should be lighter and easier to scale. I am also practicing Azure and studying foundational cloud certifications so I can choose cloud tools with better judgment."
   },
   {
     title: "Redis & Queues",
     copy:
-      "I use queues for retries, notifications, background processing, and work that should not slow the user down."
+      "I use Redis and queues for work that should not block the user: retries, notifications, background checks, and processing tasks. In payment and workflow systems, this helps the app stay responsive even when other services are slow."
   },
   {
     title: "Docker & CI/CD",
     copy:
-      "I use Docker and pipelines so apps behave consistently and releases do not feel like a gamble."
+      "I use Docker and CI/CD to reduce the 'it works on my machine' problem. The aim is predictable setup, cleaner deployments, and fewer surprises when changes move from local development to production."
   }
 ];
 
 export const skillGroups = [
-  { title: "Backend Architecture", items: ["Python", "Node.js", "NestJS", "REST APIs", "GraphQL"] },
-  { title: "Data Integrity", items: ["PostgreSQL", "Redis", "BullMQ", "SQL", "Audit Trails"] },
-  { title: "Cloud & DevOps", items: ["AWS", "Docker", "CI/CD", "Vercel", "GitHub Actions"] },
-  { title: "Frontend Product UI", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"] },
-  { title: "Payments & Integrations", items: ["M-Pesa", "Stripe", "Paystack", "Webhooks", "OpenAPI"] }
+  {
+    title: "Backend Architecture",
+    icon: "code_blocks",
+    items: ["Python", "Node.js", "NestJS", "REST APIs", "GraphQL", "Auth", "Webhooks"],
+    detail:
+      "This is where I spend a lot of my time: designing APIs, writing business logic, handling authentication, and connecting systems together. I have done this in products like Orionramp, Suluhu, and internal business tools."
+  },
+  {
+    title: "Data & Integrity",
+    icon: "database",
+    items: ["PostgreSQL", "MySQL", "Redis", "BullMQ", "SQL", "Audit Trails", "Data Models"],
+    detail:
+      "I work with relational data because business systems need clear records. For payments, orders, users, and reconciliation workflows, I think about how data is stored, matched, traced, and corrected when something goes wrong."
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: "cloud",
+    items: ["AWS", "AWS Lambda", "Serverless", "Azure", "Docker", "CI/CD", "Vercel", "GitHub Actions"],
+    detail:
+      "I currently use AWS Lambda and serverless functions in cloud-native app work, and I deploy frontend products with platforms like Vercel. Azure is a learning track for me right now, alongside foundational cloud certification study."
+  },
+  {
+    title: "Frontend & Fullstack",
+    icon: "web",
+    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Forms", "Dashboards", "Responsive UI"],
+    detail:
+      "I build web interfaces for dashboards, forms, marketplaces, and portfolio-style products. My focus is on clear flows, responsive layouts and screens that help users complete the task without needing a manual."
+  },
+  {
+    title: "System Design",
+    icon: "architecture",
+    items: ["API Design", "Database Design", "Queues", "Caching", "Reliability", "Security Basics", "Documentation"],
+    detail:
+      "I try to understand the moving parts before coding: users, data, integrations, money flows, and failure cases. This helps me build a first version that is practical now and not impossible to improve later."
+  },
+  {
+    title: "Payments & Integrations",
+    icon: "payments",
+    items: ["M-Pesa", "Paystack", "Stripe", "Webhooks", "OpenAPI", "Reconciliation", "Provider APIs"],
+    detail:
+      "Through Orionramp and Suluhu-type work, I have dealt with payment flows where status, callbacks, transaction visibility, and matching records matter. The goal is simple: help teams know what happened to the money."
+  },
+  {
+    title: "Debugging & Maintenance",
+    icon: "bug_report",
+    items: ["Bug Fixing", "Logs", "Testing", "Refactoring", "Performance", "Support Handover"],
+    detail:
+      "A lot of real engineering is careful maintenance. I can trace bugs, read logs, fix broken flows, simplify confusing code, and leave notes or handover material so the next person is not guessing."
+  },
+  {
+    title: "Collaboration",
+    icon: "groups",
+    items: ["Requirements", "Git", "Pull Requests", "Technical Writing", "Client Communication", "Team Delivery"],
+    detail:
+      "I have worked in teams where product, technical, and business context all mattered. I can ask for requirements, break work into smaller steps, use Git and pull requests, and explain progress without hiding behind jargon."
+  }
 ];
 
 export const recognition = [

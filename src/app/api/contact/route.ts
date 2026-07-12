@@ -54,7 +54,7 @@ export async function POST(request: Request) {
     }
 
     if (!name || !email || !message) {
-      return NextResponse.json({ error: "Please fill in your name, email, and message." }, { status: 400 });
+      return NextResponse.json({ error: "Please fill in your name, email and message." }, { status: 400 });
     }
 
     if (message.length < 10) {

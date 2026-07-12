@@ -58,7 +58,7 @@ export async function POST(request: Request) {
 
     if (!name || !email || !date || !time || !timezone) {
       return NextResponse.json(
-        { error: "Please fill in your name, email, preferred date, preferred time, and timezone." },
+        { error: "Please fill in your name, email, preferred date, preferred time and timezone." },
         { status: 400 }
       );
     }
