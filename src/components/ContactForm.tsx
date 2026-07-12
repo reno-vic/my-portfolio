@@ -66,7 +66,7 @@ export default function ContactForm() {
           name="message"
           className="form-input resize-y min-h-36"
           id="message"
-          placeholder="WHAT SHOULD WE BUILD, FIX, OR IMPROVE?"
+          placeholder="TELL ME, WHAT SHALL WE BUILD, FIX, OR IMPROVE?"
 
           rows={5}
           required

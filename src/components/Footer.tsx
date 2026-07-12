@@ -30,6 +30,10 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-primary-container text-[18px]">call</span>
                 {contact.phone}
               </a>
+              <div className="contact-row w-auto min-h-0 py-3">
+                <span className="material-symbols-outlined text-primary-container text-[18px]">location_on</span>
+                {contact.address}
+              </div>
             </div>
             <div className="mt-5 flex flex-wrap gap-4">
               {footerLinks.map((link) => {

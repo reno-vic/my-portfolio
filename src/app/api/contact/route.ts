@@ -58,9 +58,9 @@ export async function POST(request: Request) {
     }
 
     if (message.length < 10) {
-      return NextResponse.json({ error: "Please leave a slightly longer message (At least 10 characters)" }, { status: 400 });
+      return NextResponse.json({ error: "Please leave a slightly longer message, at least 10 characters." }, { status: 400 });
     }
- 
+
     if (!emailPattern.test(email)) {
       return NextResponse.json({ error: "Please use a valid email address." }, { status: 400 });
     }

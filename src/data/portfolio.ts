@@ -1,6 +1,7 @@
 export const contact = {
   email: "vicreno08@gmail.com",
   phone: "+254 768 945 358",
+  address: "44 Muthithi Road, Westlands, Nairobi",
   schedulingUrl: process.env.NEXT_PUBLIC_SCHEDULING_URL || "",
   githubUrl: "https://github.com/reno-vic",
   linkedinUrl: "https://www.linkedin.com/in/victor-reno-985a9034b",
@@ -19,62 +20,41 @@ export type Project = {
   description: string;
   value: string;
   tech: string[];
-  link: string;
-  status: "Live" | "Public" | "Private";
+  link?: string;
+  actions?: {
+    label: string;
+    href?: string;
+    tone?: "primary" | "muted" | "github";
+  }[];
+  status: "Live" | "Public" | "Private" | "In development" | "Under Maintenance";
   logoSrc?: string;
   logoAlt?: string;
   logoShape?: "square" | "wide";
-  logoTone?: "neutral" | "coral" | "lime" | "ink" | "gold" | "stone";
+  logoTone?: "neutral" | "coral" | "lime" | "ink" | "gold" | "stone" | "transparent";
   logoText?: string;
 };
 
 export const projects: Project[] = [
   {
     title: "Orionramp",
-    eyebrow: "Stablecoin payment infrastructure",
+    eyebrow: "Fiat-to-Crypto On-Ramp API",
     description:
-      "Orionramp helps African businesses accept familiar local payments and route settlement into supported Hedera digital-asset flows.",
+      "An on-ramp API that helps wallets, businesses, and institutions move users from local money, like KES via M-Pesa, into supported digital assets on Hedera such as stablecoins.",
     value:
-      "I worked on merchant-facing setup flows: API keys, sandbox access, account configuration, transaction visibility, and the dashboard moments businesses use before going live.",
+      "The point is access; as stablecoins and digital wallets become more useful, moving from fiat currencies to digital assets should feel simple and less intimidating. It was built at the NSE Innovation Lab by a team of five engineers, me included.",
     tech: ["Hedera", "Paystack", "Merchant Dashboard", "Fintech"],
     link: "https://orionramp.com/",
+    actions: [{ label: "View", href: "https://orionramp.com/" }],
     status: "Live",
     logoSrc: "/project-logos/orionramp-logo.png",
     logoAlt: "Orionramp logo",
     logoTone: "ink"
   },
   {
-    title: "Pureez",
-    eyebrow: "Ecommerce application",
-    description:
-      "Pureez is a Kenyan ecommerce experience built around product discovery, shopping flows, and a smoother path from browsing to checkout.",
-    value:
-      "The work sits in the commerce layer: catalog clarity, customer-friendly purchase flows, and the business logic a seller needs behind the storefront.",
-    tech: ["Ecommerce", "Catalog", "Checkout"],
-    link: "https://pureez.co.ke/",
-    status: "Live",
-    logoSrc: "/project-logos/pureez-logo.png",
-    logoAlt: "Pureez logo",
-    logoTone: "lime"
-  },
-  {
-    title: "Resumely",
-    eyebrow: "Resume workflow product",
-    description:
-      "Resumely turns scattered career information into a guided resume workflow, so users can build cleaner documents without fighting a blank page.",
-    value:
-      "I focused on structured document flow, friendly product UI, and a calmer way to edit career details over time.",
-    tech: ["Career Tech", "Documents", "Product UI"],
-    link: "",
-    status: "Private",
-    logoText: "RS",
-    logoTone: "coral"
-  },
-  {
     title: "Mam Nature",
-    eyebrow: "Switzerland ecommerce",
+    eyebrow: "Swiss ecommerce",
     description:
-      "Mam Nature is a Switzerland-based ecommerce site for whole-house water filtration, where product trust and education matter before the sale.",
+      "A Switzerland-based ecommerce platform for whole-house water filtration products.",
     value:
       "The project needed commerce flows that could explain technical filtration benefits, support product confidence, and make buying feel credible.",
     tech: ["Ecommerce", "International", "Operations"],
@@ -86,41 +66,79 @@ export const projects: Project[] = [
     logoTone: "stone"
   },
   {
+    title: "Careerswolf",
+    eyebrow: "Cloud-native career platform",
+    description:
+      "Careerswolf helps people turn career information into better resumes, portfolio websites, and an AI assistant for job matching and interview preparation.",
+    value:
+      "It aims to build trust in remote workers by helping them present their skills clearly online, while keeping their professional profiles in one place.",
+    tech: ["AWS", "AI Assistant", "Portfolio Builder", "WhatsApp"],
+    actions: [{ label: "Careerswolf.com", tone: "muted" }],
+    status: "In development",
+    logoSrc: "/project-logos/careerswolf-logo.png",
+    logoAlt: "Careerswolf logo",
+    logoTone: "transparent"
+  },
+  {
+    title: "Pureez",
+    eyebrow: "Kenyan marketplace",
+    description:
+      "A Kenyan marketplace for approved household items, land, vehicles, and other listings.",
+    value:
+      "It moved a growing WhatsApp community into a safer web and mobile marketplace with approved listings and better discovery.",
+    tech: ["Marketplace", "SEO", "Mobile App", "Trust Flows"],
+    link: "https://pureez.co.ke/",
+    actions: [{ label: "View", href: "https://pureez.co.ke/" }],
+    status: "Under Maintenance",
+    logoSrc: "/project-logos/pureez-logo.png",
+    logoAlt: "Pureez logo",
+    logoTone: "lime"
+  },
+  {
+    title: "Suluhu",
+    eyebrow: "SME collections and reconciliation",
+    description:
+      "Suluhu helps businesses see all their incoming payments in one place, whether money came through M-Pesa, bank, Airtel Money, cards, cash or another provider.",
+    value:
+      "It saves teams time by making it easier to see which payment belongs to which customer or invoice, so fewer payments are missed, mixed up, or followed up wrongly.",
+    tech: ["M-Pesa", "Banks", "Airtel Money", "Reconciliation"],
+    actions: [{ label: "Private / link pending", tone: "muted" }],
+    status: "Private",
+    logoSrc: "/project-logos/suluhu-logo.png",
+    logoAlt: "Suluhu logo",
+    logoTone: "transparent"
+  },
+  {
     title: "BitSpam",
     eyebrow: "Pull request quality triage",
     description:
-      "BitSpam helps maintainers spot low-signal pull requests before review time gets swallowed by vague changes, risky diffs, or missing context.",
+      "BitSpam helps repository owners spot low-quality or suspicious code contributions before wasting time on them.",
     value:
-      "It works as an advisory layer: explain the risk, guide contributors fairly, and keep review queues useful without shutting down genuine work.",
-    tech: ["GitHub API", "Queues", "Rules", "AI Signals"],
+      "Connect the GitHub App, let it watch new pull requests, then get a quick analysis and ranking on potentially useful and/or spammy code changes.",
+    tech: ["GitHub App", "PR Analysis", "Hackathon", "AI Signals"],
     link: "https://bitspam.vercel.app/",
+    actions: [
+      { label: "View", href: "https://bitspam.vercel.app/" },
+      { label: "GitHub App", href: "https://github.com/apps/bitspam", tone: "github" }
+    ],
     status: "Live",
     logoSrc: "/project-logos/bitspam-mark.svg",
     logoAlt: "BitSpam logo",
     logoTone: "neutral"
   },
   {
-    title: "Suluhu",
-    eyebrow: "SME collections and reconciliation",
-    description:
-      "Suluhu gives SMEs a clearer view of money coming in, what matched correctly, and what still needs attention.",
-    value:
-      "The work is about financial confidence: reliable payment processing, reconciliation views, audit trails, and retry-friendly backend workflows.",
-    tech: ["PostgreSQL", "Redis", "OpenAPI", "Fintech"],
-    link: "",
-    status: "Private",
-    logoText: "SU",
-    logoTone: "gold"
-  },
-  {
     title: "Certify",
     eyebrow: "Blockchain certificate issuance",
     description:
-      "Certify helps institutions issue tamper-evident academic certificates and gives employers a faster way to verify records.",
+      "Certify helps institutions issue certificates that are easier to verify and harder to forge. Built during my final year in Uni.",
     value:
-      "I built around the trust layer: certificate issuance, verification flows, blockchain-backed records, and the presentation material for the academic system.",
+      "Instead of trusting screenshots or chasing paperwork, someone can quickly verify a certificate record on the blockchain.",
     tech: ["Blockchain", "Verification", "Academic Records"],
     link: "https://certify-sandy.vercel.app/",
+    actions: [
+      { label: "GitHub", href: "https://github.com/reno-vic/certify", tone: "github" },
+      { label: "View", href: "https://certify-sandy.vercel.app/" }
+    ],
     status: "Public",
     logoSrc: "/project-logos/certify-logo.png",
     logoAlt: "Certify logo",

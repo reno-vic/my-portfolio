@@ -43,7 +43,7 @@ export default function Home() {
               See my work
             </Link>
             <Link href="/contact" className="bg-surface/60 backdrop-blur-md border border-outline-variant text-on-surface rounded-3xl px-8 py-4 font-body-lg font-bold hover:bg-surface-container-high transition-all duration-300 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)]">
-              Let&apos;s chat
+              Let&apos;s connect
             </Link>
           </div>
         </div>

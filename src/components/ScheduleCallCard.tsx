@@ -187,7 +187,7 @@ export default function ScheduleCallCard() {
                 <textarea
                   name="message"
                   className="form-input min-h-20 resize-none"
-                  placeholder="WHAT SHOULD WE TALK ABOUT?"
+                  placeholder="TELL ME, WHAT SHALL WE TALK ABOUT?"
                   rows={3}
                 />
               </Field>

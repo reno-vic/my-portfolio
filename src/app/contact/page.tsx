@@ -30,6 +30,11 @@ export default function Contact() {
                 {contact.phone}
               </a>
             </div>
+
+            <div className="contact-row">
+              <span className="material-symbols-outlined text-primary-container">location_on</span>
+              {contact.address}
+            </div>
           </div>
 
           <div className="lg:col-span-6">
