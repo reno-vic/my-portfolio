@@ -14,7 +14,11 @@
       background-color: #fbf9f7;
       color: #1b1c1b;
       max-width: 100%;
-      overflow-x: hidden;
+      overflow-x: clip;
+  }
+
+  html {
+      scrollbar-gutter: stable;
   }
 }
 

@@ -45,7 +45,7 @@ export default function RootLayout({
     >
       <body className="bg-background text-on-surface min-h-screen flex flex-col font-body-md text-body-md selection:bg-secondary-container selection:text-on-secondary-container">
         <TopNavBar />
-        <main className="grow flex flex-col pt-24 pb-section-gap w-full min-w-0 overflow-x-hidden">
+        <main className="grow flex flex-col pt-24 pb-section-gap w-full min-w-0">
           {children}
         </main>
         <Footer />

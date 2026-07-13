@@ -74,7 +74,7 @@ export default function Projects() {
         <section className="mb-stack-xl min-w-0">
           <div className="max-w-3xl min-w-0">
             <h1 className="font-display-lg text-[30px] leading-[1.16] md:text-display-lg text-on-surface mb-5 max-w-full wrap-break-word">
-              Building <span className="text-primary-container">applications</span> that solve problems.
+              Building <span className="text-primary-container">applications</span> that address problems.
             </h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl wrap-break-word">
               A selected look at projects I&apos;ve worked on and the stories behind them. Less theatre, more useful software.

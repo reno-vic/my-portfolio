@@ -70,6 +70,12 @@ export default function Footer() {
                   {link.name}
                 </Link>
               ))}
+              <Link
+                href="/services#references"
+                className="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors duration-200 uppercase"
+              >
+                REFERENCES
+              </Link>
             </div>
           </div>
 

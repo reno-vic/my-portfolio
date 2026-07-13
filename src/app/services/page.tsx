@@ -1,6 +1,7 @@
 import PageTransition from "@/components/PageTransition";
 import Link from "next/link";
-import { valueCards } from "@/data/portfolio";
+import { services, valueCards, clientTypes, references } from "@/data/portfolio";
+import ServiceRows from "@/components/ServiceRows";
 
 export default function Services() {
   return (
@@ -14,112 +15,129 @@ export default function Services() {
         <section className="mb-stack-xl">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
              <div className="md:col-span-8 md:col-start-3 text-center">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed mb-stack-sm shadow-sm border border-secondary-fixed-dim/50">
-                   <span className="w-2 h-2 rounded-full bg-on-secondary-fixed animate-pulse"></span>
-                   <span className="font-label-caps text-label-caps uppercase">Value-Driven Engineering</span>
-                </div>
+                
                 <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface mb-5">
-                   Architecting <span className="text-gradient">Digital Solutions</span> That Drive Growth.
+                   I Build the Software Your <span className="text-gradient">Business Runs On.</span>
                 </h1>
                 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-                   From robust web applications to complex fintech integrations, I deliver high-performance software tailored to your business processes.
+                   Whatever the problem, I write clean code that solves it and keeps working long after launch.
                 </p>
              </div>
           </div>
         </section>
 
-        {/* Services Bento Grid */}
+        {/* Browsable Services Grid */}
         <section className="mb-stack-xl">
-           <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-               {/* Service 1: Custom Web Apps */}
-               <div className="md:col-span-8 glossy-card rounded-3xl p-8 md:p-10 flex flex-col justify-between group h-full min-h-75">
-                   <div className="mb-8">
-                       <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 text-primary border border-primary/20">
-                           <span className="material-symbols-outlined text-3xl icon-fill" style={{ fontVariationSettings: "'FILL' 1" }}>web</span>
-                       </div>
-                       <h2 className="font-headline-md text-headline-md text-on-surface mb-4 group-hover:text-primary transition-colors">Custom Web Applications</h2>
-                       <p className="font-body-md text-body-md text-on-surface-variant max-w-xl">
-                           Scalable, secure and high-performance applications built from the ground up. I leverage modern frameworks to create seamless, interactive experiences that users love and businesses rely on.
-                       </p>
-                   </div>
-                   <div className="flex flex-wrap gap-2 mt-auto">
-                       <span className="px-3 py-1 bg-surface-container rounded-full font-label-caps text-[10px] text-on-surface-variant border border-outline-variant/30 uppercase tracking-wider">React / Next.js</span>
-                       <span className="px-3 py-1 bg-surface-container rounded-full font-label-caps text-[10px] text-on-surface-variant border border-outline-variant/30 uppercase tracking-wider">Node.js</span>
-                       <span className="px-3 py-1 bg-surface-container rounded-full font-label-caps text-[10px] text-on-surface-variant border border-outline-variant/30 uppercase tracking-wider">Cloud Native</span>
-                   </div>
-               </div>
-               
-               {/* Decorative Image */}
-               <div className="md:col-span-4 rounded-3xl overflow-hidden shadow-glossy-layer relative group h-full min-h-75">
-                   <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbYzFcaNMz-P3sM1XbmAjb1mXb17inymYhIadJHL3EagKrnE8vYf7li8s47FMWFBzsyppSOFHZYVQeiuEo9wXZgRWbgd2-iaoJvXvlWobdFy66O6r6zc-sJquLG3yypbgu5-US1eD9xniIR5g-nyuCIVoQ2TmDSdDt6nLv9GXiIz86WyrPTbwKy1zp5QBmWOCu9Uop5teGmUswWtwMr05Zxbb2g9M4czhNudFoJgKoc4-g4MZp-VdK')" }}></div>
-                   <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
-                   <div className="absolute bottom-6 left-6 right-6">
-                       <p className="font-label-caps text-label-caps text-on-primary opacity-80 uppercase tracking-widest mb-1">Architecture</p>
-                       <p className="font-headline-md text-xl text-on-primary font-bold">Built to Scale</p>
-                   </div>
-               </div>
+           <div className="mb-8">
+              <p className="font-label-caps text-label-caps uppercase text-primary mb-3">What I build</p>
+              <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+                 Find your project here.
+              </h2>
+           </div>
 
-               {/* Service 2: Fintech */}
-               <div className="md:col-span-5 glossy-card rounded-3xl p-8 flex flex-col group h-full">
-                   <div className="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center mb-6 text-on-surface border border-outline-variant/50">
-                       <span className="material-symbols-outlined text-2xl">payments</span>
-                   </div>
-                   <h3 className="font-headline-md text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors">Fintech & Integrations</h3>
-                   <p className="font-body-md text-body-md text-on-surface-variant mb-6 grow">
-                       Seamless integration of payment gateways like M-Pesa and Stripe. I build secure transaction flows and automated reconciliation systems to ensure financial data integrity.
-                   </p>
-                   <div className="flex gap-2">
-                       <span className="px-3 py-1 bg-surface-container rounded-full font-label-caps text-[10px] text-on-surface-variant border border-outline-variant/30 uppercase">M-Pesa</span>
-                       <span className="px-3 py-1 bg-surface-container rounded-full font-label-caps text-[10px] text-on-surface-variant border border-outline-variant/30 uppercase">Stripe API</span>
-                   </div>
-               </div>
+           <ServiceRows services={services} />
+        </section>
 
-               {/* Service 3: Automation */}
-               <div className="md:col-span-7 glossy-card rounded-3xl p-8 flex flex-col group h-full relative overflow-hidden">
-                   <div className="absolute right-0 top-0 w-32 h-32 bg-secondary-fixed/20 rounded-bl-full -z-10"></div>
-                   <div className="w-12 h-12 rounded-xl bg-secondary-fixed/20 flex items-center justify-center mb-6 text-on-secondary-container border border-secondary-fixed/50">
-                       <span className="material-symbols-outlined text-2xl">account_tree</span>
-                   </div>
-                   <h3 className="font-headline-md text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors">Business Process Automation</h3>
-                   <p className="font-body-md text-body-md text-on-surface-variant mb-6 max-w-lg grow">
-                       Transforming manual tasks into streamlined digital workflows. From custom internal tools to complex ERP integrations, I help teams operate faster and with fewer errors.
-                   </p>
-                   <div className="flex gap-2">
-                       <span className="px-3 py-1 bg-surface-container rounded-full font-label-caps text-[10px] text-on-surface-variant border border-outline-variant/30 uppercase">Workflows</span>
-                       <span className="px-3 py-1 bg-surface-container rounded-full font-label-caps text-[10px] text-on-surface-variant border border-outline-variant/30 uppercase">Internal Tools</span>
-                   </div>
-               </div>
+        {/* Who I Work With */}
+        <section className="mb-stack-xl">
+           <div className="text-center mb-8">
+              <p className="font-label-caps text-label-caps uppercase text-primary mb-3">Who I work with</p>
+              <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-3">
+                 From solo founders to large organisations.
+              </h2>
+              <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                 I have built software for small teams running on WhatsApp, fintech startups at innovation labs, Swiss ecommerce brands, and enterprise-scale internal tools. If you have a problem that software can solve, we can work together.
+              </p>
+           </div>
+           <div className="flex flex-wrap justify-center gap-3">
+              {clientTypes.map((type) => (
+                 <span key={type} className="px-5 py-2.5 rounded-full bg-surface-container-high border border-outline-variant/40 font-body-md text-body-md text-on-surface hover:bg-primary/10 hover:border-primary/30 hover:text-primary transition-all duration-200 cursor-default">
+                    {type}
+                 </span>
+              ))}
            </div>
         </section>
 
+        {/* Why Choose Me */}
         <section className="mb-stack-xl">
            <div className="max-w-3xl mb-8">
-              <p className="font-label-caps text-label-caps uppercase text-primary mb-3">Value I bring</p>
+              <p className="font-label-caps text-label-caps uppercase text-primary mb-3">The difference</p>
               <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">
-                 Business value in plain English.
+                 Why Clients Choose Me
               </h2>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                 The goal is not just to ship code. The goal is to help your team move faster, trust the system, and
-                 keep growing without rebuilding everything from scratch.
+                 It is not just about writing code. It is about how the work gets done — the communication, the quality, the approach, and the results you can actually see.
+              </p>
+           </div>
+
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+              {valueCards.map((card, index) => {
+                 const colors = [
+                    "text-primary-container bg-primary-container/10 border-primary-container/20",
+                    "text-blue-600 bg-blue-500/10 border-blue-500/20",
+                    "text-emerald-600 bg-emerald-500/10 border-emerald-500/20",
+                    "text-purple-600 bg-purple-500/10 border-purple-500/20",
+                    "text-rose-600 bg-rose-500/10 border-rose-500/20"
+                 ];
+                 const colorClass = colors[index % colors.length];
+                 const watermarkColors = [
+                    "text-primary-container",
+                    "text-blue-600",
+                    "text-emerald-600",
+                    "text-purple-600",
+                    "text-rose-600"
+                 ];
+                 const watermarkClass = watermarkColors[index % watermarkColors.length];
+
+                 return (
+                 <article key={card.title} className="glossy-card rounded-3xl p-7 flex flex-col h-full">
+                    <div className="flex items-start justify-between mb-4 gap-4">
+                       <div className="flex items-center gap-4">
+                          <div className={`w-12 h-12 shrink-0 rounded-xl flex items-center justify-center border ${colorClass}`}>
+                             <span className="material-symbols-outlined">{card.icon}</span>
+                          </div>
+                          <h3 className="font-headline-md text-xl text-on-surface leading-tight">{card.title}</h3>
+                       </div>
+                       <span className={`material-symbols-outlined text-5xl opacity-10 shrink-0 ${watermarkClass} hidden sm:block`}>
+                          {card.icon}
+                       </span>
+                    </div>
+                    <p className="font-body-md text-body-md text-on-surface-variant grow pt-2">{card.description}</p>
+                 </article>
+                 );
+              })}
+           </div>
+        </section>
+
+        {/* References */}
+        <section id="references" className="mb-stack-xl scroll-mt-24">
+           <div className="max-w-3xl mb-8">
+              <p className="font-label-caps text-label-caps uppercase text-primary mb-3">References</p>
+              <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">
+                 People I Have Worked With
+              </h2>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                 Real projects. Real people. Here is what working with me looks like from the other side.
               </p>
            </div>
 
            <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-              {valueCards.map((card) => (
-                 <article key={card.title} className="glossy-card rounded-3xl p-7 min-h-70 flex flex-col">
-                    <div className="flex items-start justify-between mb-6">
-                       <div className="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center text-primary-container border border-primary-container/20">
-                          <span className="material-symbols-outlined">{card.icon}</span>
+              {references.map((ref) => (
+                 <article key={ref.name} className="glossy-card rounded-3xl p-7 flex flex-col">
+                    {/* Quote icon */}
+                    <span className="material-symbols-outlined text-primary-fixed-dim text-4xl opacity-25 mb-4">format_quote</span>
+                    <p className="font-body-md text-body-md text-on-surface-variant grow italic leading-relaxed mb-6">
+                       &ldquo;{ref.quote}&rdquo;
+                    </p>
+                    <div className="border-t border-outline-variant/30 pt-5 flex items-center gap-4">
+                       <div className="w-11 h-11 rounded-full bg-primary-container/15 border border-primary-container/25 flex items-center justify-center shrink-0">
+                          <span className="font-label-caps text-label-caps text-primary font-bold">{ref.initials}</span>
                        </div>
-                       <span className="material-symbols-outlined text-primary-fixed-dim text-5xl opacity-30">
-                          {card.icon}
-                       </span>
-                    </div>
-                    <h3 className="font-headline-md text-2xl text-on-surface mb-4">{card.title}</h3>
-                    <p className="font-body-md text-body-md text-on-surface-variant grow">{card.description}</p>
-                    <div className="border-t border-outline-variant/30 mt-6 pt-4 flex items-center justify-between gap-4">
-                       <span className="font-label-caps text-label-caps text-on-surface-variant uppercase">Impact</span>
-                       <span className="font-label-caps text-label-caps text-primary uppercase">{card.metric}</span>
+                       <div className="min-w-0">
+                          <p className="font-headline-md text-sm text-on-surface font-bold truncate">{ref.name}</p>
+                          <p className="font-body-md text-xs text-on-surface-variant truncate">{ref.role}, {ref.company}</p>
+                          <p className="font-body-md text-xs text-on-surface-variant">{ref.flag} {ref.country}</p>
+                       </div>
                     </div>
                  </article>
               ))}
@@ -132,7 +150,7 @@ export default function Services() {
               <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
               <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4 relative z-10">Ready to build something impactful?</h2>
               <p className="font-body-md text-body-md text-on-surface-variant mb-8 max-w-xl mx-auto relative z-10">Let&apos;s discuss how customized engineering solutions can accelerate your business objectives.</p>
-              <Link href="/contact" className="relative z-10 inline-flex items-center gap-2 bg-on-surface text-inverse-on-surface font-label-caps text-label-caps px-8 py-4 rounded-full hover:bg-primary-container hover:text-on-primary transition-colors duration-300 shadow-md">
+              <Link href="/contact" className="relative z-10 inline-flex items-center gap-2 bg-primary-container text-on-primary font-label-caps text-label-caps px-8 py-4 rounded-full hover:scale-[1.02] transition-all duration-300 shadow-[0_4px_16px_rgba(255,95,31,0.3)]">
                  Start a Conversation
                  <span className="material-symbols-outlined text-lg">arrow_forward</span>
               </Link>

@@ -13,7 +13,7 @@ export default function TopNavBar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-md border-b border-white/40 shadow-[0_4px_24px_0_rgba(0,0,0,0.02)]">
       <div className="w-full max-w-340 mx-auto px-margin-mobile md:px-8 xl:px-10 flex justify-between items-center h-16 box-border">
-        <Link href="/" className="brand-mark font-display-lg text-[26px] md:text-[30px] leading-none font-extrabold flex items-center">
+        <Link href="/" className="brand-mark font-display-lg text-[20px] md:text-[26px] leading-none font-extrabold flex items-center">
           <span className="brand-mark-text">Victor Reno</span>
           <svg
             aria-hidden="true"

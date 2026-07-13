@@ -5,11 +5,7 @@ export default function Home() {
   return (
     <PageTransition>
       <section className="relative w-full min-h-115 md:min-h-125 flex flex-col items-center justify-start overflow-hidden pt-2 pb-8 md:pt-3 md:pb-10 grow">
-        <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none select-none">
-          <span className="font-display-xl font-extrabold text-[96px] md:text-[160px] lg:text-[220px] leading-none text-surface-dim/40 mix-blend-multiply">
-            VICTOR
-          </span>
-        </div>
+
 
         <div className="relative z-10 max-w-4xl mx-auto px-margin-mobile md:px-gutter flex flex-col items-center text-center space-y-6">
           {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface/60 backdrop-blur-md border border-outline-variant shadow-sm">
@@ -20,22 +16,21 @@ export default function Home() {
           </div> */}
 
           <h1 className="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-on-surface font-extrabold">
-            oh hey there,
+            Hi.
             <br />
             I&apos;m{" "}
             <span className="relative inline-block">
-              <span className="relative z-10 text-primary">Victor.</span>
+              <span className="relative z-10 text-primary">Victor,</span>
               <span className="absolute bottom-2 left-0 w-full h-4 bg-secondary-container/60 -rotate-2 -z-10" />
             </span>
           </h1>
 
           <p className="font-headline-md text-2xl md:text-headline-md text-primary max-w-3xl mx-auto">
-            Software &amp; Cloud Engineer | Business Technology Strategist
+             a Software &amp; Cloud Engineer.
           </p>
 
-          <p className="font-body-lg text-body-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto">
-            I build calm, useful web apps for growing businesses. If payments, ecommerce, records, or internal workflows
-            feel messy, I turn that into software your team can trust and understand.
+          <p className="font-body-lg text-body-lg md:text-xl text-on-surface-variant max-w-3xl mx-auto">
+            I build software that scales smoothly. From managing cloud infrastructure to writing the backend code that powers everything, I engineer practical solutions that your business can depend on.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">

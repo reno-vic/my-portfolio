@@ -8,10 +8,6 @@ export default function Journey() {
       <div className="grow pb-stack-xl relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <section className="mb-stack-xl">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed mb-stack-sm border border-secondary-fixed-dim/50">
-              <span className="w-2 h-2 rounded-full bg-on-secondary-fixed" />
-              <span className="font-label-caps text-label-caps uppercase">Journey</span>
-            </div>
             <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface mb-5">
               The path behind the software I build.
             </h1>
@@ -132,8 +128,9 @@ export default function Journey() {
                 What I keep chasing.
               </h2>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                My CV lists professional pursuits rather than personal hobbies, so I am keeping this honest: these are
-                the areas I keep studying, building around, and trying to get sharper at.
+                My CV usually lists professional pursuits rather than personal hobbies. But to keep it honest and fun: my real hobbies include catching up with friends for a few laughs, networking, and I would love to play golf someday! 
+                <br /><br />
+                As for the professional side, these are the areas I keep studying, building around, and trying to get sharper at:
               </p>
             </div>
             <div className="lg:col-span-7 flex flex-wrap gap-3">

@@ -100,7 +100,7 @@ export const projects: Project[] = [
     description:
       "Suluhu helps businesses see all their incoming payments in one place, whether money came through M-Pesa, bank, Airtel Money, cards, cash or another provider.",
     value:
-      "It saves teams time by making it easier to see which payment belongs to which customer or invoice, so fewer payments are missed, mixed up, or followed up wrongly.",
+      "It saves teams time by making it easier to see which payment belongs to which customer or invoice, ensuring payments are not missed, mixed up, or followed up wrongly.",
     tech: ["M-Pesa", "Banks", "Airtel Money", "Reconciliation"],
     actions: [{ label: "Private / link pending", tone: "muted" }],
     status: "Private",
@@ -155,17 +155,17 @@ export const services = [
     tags: ["Next.js", "React", "SaaS", "Dashboards"]
   },
   {
-    title: "Payments & PaaS",
+    title: "APIs & Integrations",
     icon: "payments",
     description:
-      "Payment APIs, checkout flows, wallet integrations, provider webhooks, transaction dashboards and payment-as-a-service ideas for teams moving money.",
-    tags: ["M-Pesa", "Paystack", "Stripe", "Webhooks"]
+      "Custom API development, payment gateways, checkout flows, provider webhooks, and seamless third-party software integrations to securely connect your business systems.",
+    tags: ["API Development", "M-Pesa", "Stripe", "Webhooks"]
   },
   {
-    title: "Business Systems & ERPs",
+    title: "Enterprise Software & ERPs",
     icon: "account_tree",
     description:
-      "Internal tools, approval flows, inventory screens, reporting tools, staff workflows, ERP-style modules and systems that reduce manual work.",
+      "Internal tools, approval flows, inventory management, reporting modules, staff workflows, ERP-style systems and business process engines that cut manual work in half.",
     tags: ["ERP", "Workflows", "Reports", "Automation"]
   },
   {
@@ -183,91 +183,116 @@ export const services = [
     tags: ["Catalogs", "Checkout", "SEO", "Listings"]
   },
   {
-    title: "AI Bots & Workflows",
+    title: "AI Bots & Chatbots",
     icon: "smart_toy",
     description:
-      "Chatbots, AI assistants, internal automations, n8n-style workflows, data helpers, and Python-powered integrations that reduce repetitive work.",
-    tags: ["Python", "n8n", "Ollama", "Automation"]
+      "Conversational AI assistants, customer support bots, internal knowledge bots, and intelligent chatbots that handle questions, bookings, and routine interactions without human effort.",
+    tags: ["Chatbots", "AI Assistants", "NLP", "Python"]
   },
   {
-    title: "Portfolios & Business Websites",
+    title: "AI Workflows & Integrations",
+    icon: "neurology",
+    description:
+      "Automated pipelines, n8n workflows, Ollama-powered local AI, data processing chains, and agentic integrations that connect your tools and reduce repetitive work.",
+    tags: ["n8n", "Ollama", "Agents", "Automation"]
+  },
+  {
+    title: "Business Websites & Portfolios",
     icon: "badge",
     description:
-      "Professional websites for founders, consultants, teams, products, and personal brands where trust, clarity, and presentation matter.",
+      "Professional websites for founders, consultants, teams, products, and personal brands where trust, clarity, and presentation matter more than flashy gimmicks.",
     tags: ["Portfolio", "Brand", "Landing Pages", "SEO"]
+  },
+  {
+    title: "Mobile-Responsive Applications",
+    icon: "smartphone",
+    description:
+      "Mobile-first web applications, progressive web apps, and responsive interfaces that work seamlessly across phones, tablets, and desktops.",
+    tags: ["PWA", "Responsive", "Mobile-First", "Cross-Platform"]
+  },
+  {
+    title: "API Development & Integrations",
+    icon: "api",
+    description:
+      "REST APIs, third-party service integrations, webhook handlers, data synchronization, and middleware that connects your systems together reliably.",
+    tags: ["REST", "APIs", "Webhooks", "Middleware"]
   },
   {
     title: "Bug Fixing & Reengineering",
     icon: "build_circle",
     description:
-      "Fixing broken features, cleaning up confusing code, improving slow pages, modernizing old flows, and making existing software easier to maintain.",
+      "Fixing broken features, cleaning up confusing code, improving slow pages, modernizing legacy flows, and making existing software easier to maintain and extend.",
     tags: ["Debugging", "Refactor", "Performance", "Maintenance"]
   },
   {
     title: "Technical Consultation",
     icon: "support_agent",
     description:
-      "If you are not sure what to build first, I can help clarify the scope, pick a practical architecture, plan the MVP, or review the technical direction.",
-    tags: ["Planning", "Architecture", "MVP", "Review"]
+      "Not sure what to build first? I can help clarify the scope, pick a practical architecture, plan the MVP, audit existing code, or review your technical direction.",
+    tags: ["Planning", "Architecture", "MVP", "Code Review"]
   }
 ];
 
 export const valueCards = [
   {
-    title: "Clear communication",
-    icon: "bolt",
-    description:
-      "I keep the work understandable. You should know what is being built, why it matters, what is blocked, and what the next step is.",
-    metric: "Less guesswork"
-  },
-  {
-    title: "Quality that lasts",
-    icon: "shield",
-    description:
-      "I care about the boring parts too: validation, readable code, clean data flow, error handling, and systems that are easier to maintain.",
-    metric: "Better handover"
-  },
-  {
-    title: "Business-minded delivery",
+    title: "Results you can see",
     icon: "trending_up",
     description:
-      "I do not just ask what screen you want. I ask what problem the business is solving, who uses it, and what would make the work easier.",
-    metric: "Useful outcomes"
+      "I deliver working software, not promises. Every project ships with real outcomes - near-zero bugs, cleaner data, and a better experience for the people who use it every day.",
+    metric: "Real outcomes"
   },
   {
-    title: "Trusted across teams",
+    title: "Clear, honest communication",
+    icon: "forum",
+    description:
+      "You will always know what I am working on, what is next, and if something is blocked. No disappearing for weeks. Just straightforward progress reports.",
+    metric: "No surprises"
+  },
+  {
+    title: "Quality that outlasts the project",
+    icon: "shield",
+    description:
+      "Clean code, solid architecture, proper error handling and documentation that makes handover painless. Not a quick fix that breaks next month but software you can build on for years.",
+    metric: "Built to last"
+  },
+  {
+    title: "I think like a business owner",
+    icon: "lightbulb",
+    description:
+      "I do not just ask what features you want. I ask why, who uses it, and what would save you or your team the most time. That shift in thinking changes the outcome of every project.",
+    metric: "Smarter solutions"
+  },
+  {
+    title: "Trusted by startups and enterprises",
     icon: "verified",
     description:
-      "I have worked around startups, ecommerce businesses, public-sector systems, fintech ideas, and enterprise-style internal tools.",
-    metric: "Small to large"
+      "From a five-person fintech team at the NSE Innovation Lab to Swiss ecommerce and Kenyan marketplaces, I adapt to how your team works, no matter the size or industry.",
+    metric: "Any scale"
   },
   {
-    title: "Practical approach",
-    icon: "route",
-    description:
-      "I can start with a messy idea, clarify the workflow, build the first usable version, then improve it without overcomplicating the product.",
-    metric: "From idea to app"
-  },
-  {
-    title: "Reliable support",
+    title: "Reliable after delivery",
     icon: "handshake",
     description:
-      "After delivery, I can help fix issues, improve flows, add features, and keep the product moving as your needs become clearer.",
-    metric: "Ongoing help"
+      "The relationship does not end at launch. I help with fixes, improvements, and new features as your product grows. You get a partner, not a contractor who vanishes.",
+    metric: "Long-term partner"
   }
 ];
 
 export const clientTypes = [
-  "Founders",
-  "SMEs",
+  "Solo Founders",
   "Startups",
-  "Ecommerce brands",
-  "Fintech teams",
-  "Enterprise teams",
-  "Public-sector workflows",
-  "Consultants",
-  "Personal brands",
-  "Remote teams"
+  "Small Businesses",
+  "Medium Enterprises",
+  "Large Organisations",
+  "Government & Public Sector",
+  "Fintech Teams",
+  "Ecommerce Brands",
+  "SaaS Companies",
+  "Consultants & Agencies",
+  "NGOs & Non-Profits",
+  "Personal Brands",
+  "Remote & Distributed Teams",
+  "Individual Professionals"
 ];
 
 export const references = [
@@ -276,61 +301,70 @@ export const references = [
     role: "Co-Founder & Software Engineer",
     company: "Orionramp",
     country: "Kenya",
+    flag: "🇰🇪",
     initials: "RN",
-    note:
-      "Worked together on Orionramp at the NSE Innovation Lab, collaborating on fintech product work with a five-engineer team."
+    quote:
+      "Victor was one of the most trusted engineers during our time together at the NSE Innovation Lab. He was reliable, owned features end-to-end, understood complexity and delivered clean work under tight deadlines. Would gladly work with him again."
   },
   {
     name: "Christof Braun",
     role: "Founder",
     company: "Mam Nature",
     country: "Switzerland",
+    flag: "🇨🇭",
     initials: "CB",
-    note:
-      "Reference for ecommerce work around Mam Nature, where clear product presentation and trust mattered before checkout."
+    quote:
+      "Our ecommerce site was built with a great level of care. He understood that customers needed to trust the product before purchase. Working with him and communicating across time zones was smooth."
   },
   {
     name: "Purity Langat",
     role: "Founder / CEO",
     company: "Pureez",
     country: "Kenya",
+    flag: "🇰🇪",
     initials: "PL",
-    note:
-      "Reference for marketplace work around Pureez, moving a growing commerce community toward a stronger web and mobile product."
+    quote:
+      "We had a growing WhatsApp community and needed a proper marketplace. His work on our website boosted our sales and improved our business operations. It was a great experience working with him."
   }
 ];
 
 export const experiences = [
   {
-    role: "Software Engineer, Business Solutions",
+    role: "Software Engineer",
     company: "Guild Code",
-    period: "Mar 2026 - Present",
-    copy: "Architecting internal tools, ERP workflows, and robust backend APIs to support enterprise-scale operations.",
+    period: "Jul 2026 - Present",
+    copy: "I recently joined the team. Currently, I'm getting up to speed, meeting the other engineers and getting familiar with the team's engineering practices and business logic. ",
     highlights: [
-      "Work with senior engineers and company leadership to turn operational needs into clear scope, dashboards, APIs, and handover-ready software.",
-      "Build backend APIs, database workflows, and business applications using Python, TypeScript, Node.js, and PostgreSQL.",
-      "Own assigned defects and release work from investigation through testing and deployment coordination."
+
+    ]
+  },
+  {
+    role: "Software Engineering Community Member & Project Contributor",
+    company: "Guild Code Community, Nairobi, Kenya",
+    period: "Apr 2026 - May 2026",
+    copy: "Before joining formally, I was part of the community, focusing on practical learning and building solutions for real business challenges.",
+    highlights: [
+      "Collaborated with other developers through technical discussions, project feedback and knowledge-sharing while continuing to build experience through independent and freelance software projects."
     ]
   },
   {
     role: "Software Engineer",
-    company: "NSE Innovation Lab, Project Orion",
-    period: "Sep 2025 - Feb 2026",
-    copy: "Developed digital finance infrastructure, including an M-Pesa to digital asset bridge and merchant dashboard interfaces.",
+    company: "Nairobi Securities Exchange (NSE) PLC, Innovation Lab (Project Orion)",
+    period: "Sep 2025 - Mar 2026",
+    copy: "This was a deeply innovative and collaborative project. I worked alongside other engineers, including a blockchain engineer, frontend, backend, and fullstack developers - to build digital finance infrastructure from the ground up. It was a great lesson in how different technical disciplines come together.",
     highlights: [
-      "Contributed to an NSE-Hedera innovation programme focused on local payment access for digital-asset applications.",
-      "Built merchant dashboard workflows for API keys, account configuration, sandbox access, and live transaction visibility.",
-      "Helped with technical documentation used in a successful grant application; Orion later secured a USD 10,000 Builder grant."
+      "Collaborated with a cross-functional engineering team to build fiat to digital asset onramp API and merchant dashboard interfaces.",
+      "Learned how to integrate complex systems and communicate effectively.",
+      "Helped with technical documentation used in a successful grant application."
     ]
   },
   {
     role: "IT Intern",
     company: "Ministry of ICT",
     period: "Jun 2024 - Sep 2024",
-    copy: "Supported eCitizen platform work through workflow mapping, user support, documentation, and application testing.",
+    copy: "Supported eCitizen platform work through workflow mapping, user support, documentation and application testing.",
     highlights: [
-      "Mapped digital public-service workflows, documented user needs, and clarified business rules for delivery teams.",
-      "Supported testing, issue follow-up, change documentation, user guides, and training materials.",
+      "Supported testing, issue follow-up, change documentation, user guides and training materials.",
       "Worked across teams while handling institutional and citizen-service information responsibly."
     ]
   }
@@ -349,16 +383,14 @@ export const education = [
     title: "Kenya Certificate of Secondary Education",
     institution: "Maseno School",
     period: "2017 - 2021",
-    meta: "A-",
-    copy:
-      "Built the academic discipline that carried me into computer science and engineering work."
+    meta: "A-"
   }
 ];
 
 export const certifications = [
   {
-    title: "Claude Code: Software Engineering with Generative AI Agents",
-    issuer: "Vanderbilt University / Coursera",
+    title: "AWS Certified Cloud Practitioner",
+    issuer: "Amazon Web Services (AWS) — Also practicing AWS deployments",
     period: "In progress, 2026"
   },
   {
@@ -405,7 +437,7 @@ export const awards = [
     title: "Project Orion Builder Grant",
     period: "USD 10,000",
     copy:
-      "Contributed technical documentation and merchant-facing platform work to Orion, which later secured a Builder grant."
+      "Contributed technical documentation and merchant-facing platform work to Orion. Project Orion was among the projects to receive this grant."
   }
 ];
 
@@ -479,11 +511,18 @@ export const skillGroups = [
       "I try to understand the moving parts before coding: users, data, integrations, money flows, and failure cases. This helps me build a first version that is practical now and not impossible to improve later."
   },
   {
-    title: "Payments & Integrations",
-    icon: "payments",
-    items: ["M-Pesa", "Paystack", "Stripe", "Webhooks", "OpenAPI", "Reconciliation", "Provider APIs"],
+    title: "AI & Agentic Engineering",
+    icon: "neurology",
+    items: ["GitHub Copilot", "Codex", "Intelligent Tooling", "Prompt Engineering", "n8n (Learning)", "AI Workflows"],
     detail:
-      "Through Orionramp and Suluhu-type work, I have dealt with payment flows where status, callbacks, transaction visibility, and matching records matter. The goal is simple: help teams know what happened to the money."
+      "I use intelligent tooling like GitHub Copilot and Codex to streamline boilerplate and accelerate problem-solving, while maintaining full control over the architecture. I am also building working familiarity with tools like n8n to connect AI models to automated business workflows."
+  },
+  {
+    title: "APIs & Integrations",
+    icon: "api",
+    items: ["REST APIs", "Webhooks", "OpenAPI", "M-Pesa", "Stripe", "Paystack", "Provider APIs"],
+    detail:
+      "Through Orionramp and Suluhu-type work, I have built custom APIs and handled complex integrations. Whether it's securely moving data, processing webhooks, or connecting third-party platforms, the focus is always on reliable system communication."
   },
   {
     title: "Debugging & Maintenance",
@@ -498,7 +537,7 @@ export const skillGroups = [
     items: ["Requirements", "Git", "Pull Requests", "Technical Writing", "Client Communication", "Team Delivery"],
     detail:
       "I have worked in teams where product, technical, and business context all mattered. I can ask for requirements, break work into smaller steps, use Git and pull requests, and explain progress without hiding behind jargon."
-  }
+  },
 ];
 
 export const recognition = [
