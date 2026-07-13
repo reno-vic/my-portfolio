@@ -132,7 +132,7 @@ export default function ScheduleCallCard() {
 
       {isOpen && typeof document !== "undefined"
         ? createPortal(
-            <div className="fixed inset-0 z-[100] flex items-center justify-center bg-on-surface/30 px-4 py-4 backdrop-blur-sm">
+            <div className="fixed inset-0 z-100 flex items-center justify-center bg-on-surface/30 px-4 py-4 backdrop-blur-sm">
               <div className="glossy-panel w-full max-w-3xl overflow-visible rounded-[1.25rem] border border-white/60 bg-surface-container-lowest p-4 shadow-[0_24px_80px_rgba(27,28,27,0.24)] sm:p-5 md:p-6">
                 <div className="flex items-start justify-between gap-4">
               <div>

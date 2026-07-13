@@ -41,7 +41,7 @@ export const projects: Project[] = [
     description:
       "An on-ramp API that helps wallets, businesses and institutions move users from local money, like KES via M-Pesa, into supported digital assets on Hedera such as stablecoins.",
     value:
-      "The point is access; as stablecoins and digital wallets become more useful, moving from fiat currencies to digital assets should feel simple and less intimidating. It was built at the NSE Innovation Lab by a team of five engineers, me included.",
+      "The point was access; as stablecoins and digital wallets become more useful, moving from fiat currencies to digital assets should feel simple and less intimidating. This project was built at the NSE Innovation Lab by a team of five engineers, me included.",
     tech: ["Hedera", "Paystack", "Merchant Dashboard", "Fintech"],
     link: "https://orionramp.com/",
     actions: [{ label: "View", href: "https://orionramp.com/" }],

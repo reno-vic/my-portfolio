@@ -23,7 +23,7 @@ export default function ServiceRows({ services }: { services: Service[] }) {
               type="button"
               aria-expanded={isOpen}
               onClick={() => setOpenService(isOpen ? null : service.title)}
-              className="group flex w-full cursor-pointer items-center justify-between gap-5 px-6 py-5 text-left transition-colors duration-200 hover:bg-surface-container-low focus-visible:outline focus-visible:outline-2 focus-visible:outline-inset focus-visible:outline-primary-container"
+              className="group flex w-full cursor-pointer items-center justify-between gap-5 px-6 py-5 text-left transition-colors duration-200 hover:bg-surface-container-low focus-visible:outline focus-visible:outline-inset focus-visible:outline-primary-container"
             >
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 shrink-0 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary border border-outline-variant/50 transition-colors duration-300 group-hover:bg-primary/10 group-hover:border-primary/20">
@@ -44,7 +44,7 @@ export default function ServiceRows({ services }: { services: Service[] }) {
               }`}
             >
               <div className="overflow-hidden">
-                <div className="px-6 pb-6 pt-2 pl-[5.5rem] md:pl-[5.5rem]">
+                <div className="px-6 pb-6 pt-2 pl-22 md:pl-22">
                   <p className="max-w-3xl font-body-md text-body-md text-on-surface-variant mb-5">
                     {service.description}
                   </p>

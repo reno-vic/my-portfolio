@@ -133,8 +133,8 @@ export default function Projects() {
                         title={action.tone === "github" ? action.label : undefined}
                         className={
                           action.tone === "github"
-                            ? "group inline-flex h-10 w-10 items-center justify-center rounded-full border border-outline-variant/35 bg-surface-container text-on-surface transition-all duration-200 hover:-translate-y-0.5 hover:border-primary-container hover:bg-on-surface hover:text-inverse-on-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-container"
-                            : "group inline-flex max-w-full items-center gap-2 rounded-full border border-outline-variant/35 bg-surface-container px-4 py-2 font-label-caps text-label-caps text-primary-container uppercase transition-all duration-200 hover:-translate-y-0.5 hover:border-primary-container hover:bg-primary-container hover:text-on-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-container wrap-anywhere"
+                            ? "group inline-flex h-10 w-10 items-center justify-center rounded-full border border-outline-variant/35 bg-surface-container text-on-surface transition-all duration-200 hover:-translate-y-0.5 hover:border-primary-container hover:bg-on-surface hover:text-inverse-on-surface focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary-container"
+                            : "group inline-flex max-w-full items-center gap-2 rounded-full border border-outline-variant/35 bg-surface-container px-4 py-2 font-label-caps text-label-caps text-primary-container uppercase transition-all duration-200 hover:-translate-y-0.5 hover:border-primary-container hover:bg-primary-container hover:text-on-primary focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary-container wrap-anywhere"
                         }
                       >
                         {action.tone === "github" ? (

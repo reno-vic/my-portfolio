@@ -49,7 +49,7 @@ export default function TopNavBar() {
               >
                 {link.name === "SERVICES" ? (
                   <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
-                    design_services
+                    code_blocks
                   </span>
                 ) : null}
                 {link.name}
@@ -93,7 +93,7 @@ export default function TopNavBar() {
                >
                  {link.name === "SERVICES" ? (
                    <span className="material-symbols-outlined text-[18px]" aria-hidden="true">
-                     design_services
+                     code_blocks
                    </span>
                  ) : null}
                  {link.name}
