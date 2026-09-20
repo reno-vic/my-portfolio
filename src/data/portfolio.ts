@@ -373,7 +373,7 @@ export const experiences = [
 export const education = [
   {
     title: "Bachelor of Science in Computer Science",
-    institution: "University of Nairobi",
+    institution: "United States International University - Africa",
     period: "Sep 2021 - Sep 2025",
     meta: "Second Class Upper Honours",
     copy:
@@ -541,7 +541,7 @@ export const skillGroups = [
 ];
 
 export const recognition = [
-  "BSc Computer Science, University of Nairobi",
+  "BSc Computer Science, United States International University - Africa",
   "Hedera Hashathon Nairobi, 1st Runner-Up",
   "USD 10,000 Orion Builder grant contribution",
   "English, Swahili, and French working proficiency"
